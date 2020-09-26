@@ -41,11 +41,14 @@
 详细安装细节，请我博客参考：https://guo-pu.blog.csdn.net/article/details/108807165
 
 
-#### （2）Ubuntu18系统
+#### （2）Ubuntu系统
 主要使用TensorFlow2.3、opencv-python4.4.0、Pillow、matplotlib 等依赖库。
 系统：Windows       编程语言：Python 3.7或以上           深度学习框架：TensorFlow 2.3   
+详细安装细节，请我博客参考:https://blog.csdn.net/qq_41204464/article/details/108818173
 
-##### Conda (推荐)
+可以使用如下命令进行搭建
+
+##### Conda 
 
 ```bash
 # Tensorflow CPU
