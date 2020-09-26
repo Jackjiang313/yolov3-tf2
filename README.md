@@ -24,7 +24,7 @@
 - [x] MIT许可证
 
 
-![demo](https://github.com/guo-pu/yolov3-tf2/blob/master/data/cat-output.jpg) 
+<img src="https://github.com/guo-pu/yolov3-tf2/blob/master/data/cat-output.jpg" width="720" height="450"/><br/>
 
 ## 实践应用
 
