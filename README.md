@@ -93,16 +93,16 @@ python convert.py --weights ./data/yolov3-tiny.weights --output ./checkpoints/yo
 ### 进行检测
 
 ```bash
-# yolov3
+# yolov3 检测图片的对象
 python detect.py --image ./data/meme.jpg
 
 # yolov3-tiny
 python detect.py --weights ./checkpoints/yolov3-tiny.tf --tiny --image ./data/street.jpg
 
-# webcam
+# webcam  摄像头实时检测对象
 python detect_video.py --video 0
 
-# video file
+# video file   检测视频文件的对象
 python detect_video.py --video path_to_file.mp4 --weights ./checkpoints/yolov3-tiny.tf --tiny
 
 # video file with output
@@ -111,14 +111,14 @@ python detect_video.py --video path_to_file.mp4 --output ./output.avi
 
 ### 如何训练
 
-I have created a complete tutorial on how to train from scratch using the VOC2012 Dataset.
-See the documentation here https://github.com/zzh8829/yolov3-tf2/blob/master/docs/training_voc.md
+已经创建了一个完整的教程，说明如何使用VOC2012 Dataset从头开始训练。
+请参阅此处的文档 https://github.com/zzh8829/yolov3-tf2/blob/master/docs/training_voc.md
 
-For customzied training, you need to generate tfrecord following the TensorFlow Object Detection API.
-For example you can use [Microsoft VOTT](https://github.com/Microsoft/VoTT) to generate such dataset.
-You can also use this [script](https://github.com/tensorflow/models/blob/master/research/object_detection/dataset_tools/create_pascal_tf_record.py) to create the pascal voc dataset.
+要进行自定义训练，您需要遵循TensorFlow对象检测API生成tfrecord。
+例如，您可以使用[Microsoft VOTT]（https://github.com/Microsoft/VoTT）生成此类数据集。
+也可以用这个 [script](https://github.com/tensorflow/models/blob/master/research/object_detection/dataset_tools/create_pascal_tf_record.py) to create the pascal voc dataset.
 
-Example commend line arguments for training
+用于训练示例的命令
 ``` bash
 python train.py --batch_size 8 --dataset ~/Data/voc2012.tfrecord --val_dataset ~/Data/voc2012_val.tfrecord --epochs 100 --mode eager_tf --transfer fine_tune
 
@@ -130,16 +130,16 @@ python train.py --batch_size 8 --dataset ~/Data/voc2012.tfrecord --val_dataset ~
 ```
 
 ### Tensorflow 服务
-You can export the model to tf serving
+可以将模型导出到TF服务
 ```
 python export_tfserving.py --output serving/yolov3/1/
 # verify tfserving graph
 saved_model_cli show --dir serving/yolov3/1/ --tag_set serve --signature_def serving_default
 ```
 
-The inputs are preprocessed images (see `dataset.transform_iamges`)
+输入是：经过预处理的图像（请参见`dataset.transform_iamges`）
 
-outputs are
+输出是：
 ```
 yolo_nms_0: bounding boxes
 yolo_nms_1: scores
