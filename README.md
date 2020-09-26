@@ -38,7 +38,7 @@
 系统：Windows       编程语言：Python 3.8           
 深度学习框架：TensorFlow 2.3        整合开发环境：Anaconda        开发代码IDE：PyCharm
 
-详细安装细节，请参考：https://guo-pu.blog.csdn.net/article/details/108807165
+详细安装细节，请我博客参考：https://guo-pu.blog.csdn.net/article/details/108807165
 
 
 #### （2）Ubuntu18.04系统
