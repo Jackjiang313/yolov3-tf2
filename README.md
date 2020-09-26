@@ -30,9 +30,18 @@
 
 ### 搭建开发环境
 
-### （1）18.04
+#### （1）Windows系统
+基于YOLO3进行物体检测、对象识别，先和大家分享如何搭建开发环境，会分为CPU版本、GPU版本的两种开发环境，本文会分别详细地介绍搭建环境的过程。
+主要使用TensorFlow2.3、opencv-python4.4.0、Pillow、matplotlib 等依赖库。
+系统：Windows       编程语言：Python 3.8           
+深度学习框架：TensorFlow 2.3        整合开发环境：Anaconda        开发代码IDE：PyCharm
 
-#### Conda (Recommended)
+详细安装细节，请参考：https://guo-pu.blog.csdn.net/article/details/108807165
+
+
+#### （2）Ubuntu18.04系统
+
+##### Conda (推荐)
 
 ```bash
 # Tensorflow CPU
@@ -44,13 +53,13 @@ conda env create -f conda-gpu.yml
 conda activate yolov3-tf2-gpu
 ```
 
-#### Pip
+##### Pip
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Nvidia Driver (For GPU)
+##### Nvidia Driver (For GPU)
 
 ```bash
 # Ubuntu 18.04
@@ -60,7 +69,9 @@ sudo apt install nvidia-driver-430
 https://www.nvidia.com/Download/index.aspx
 ```
 
-### Convert pre-trained Darknet weights
+
+
+###  转换预先训练好的Darknet网络权重
 
 ```bash
 # yolov3
@@ -72,7 +83,7 @@ wget https://pjreddie.com/media/files/yolov3-tiny.weights -O data/yolov3-tiny.we
 python convert.py --weights ./data/yolov3-tiny.weights --output ./checkpoints/yolov3-tiny.tf --tiny
 ```
 
-### Detection
+### 进行检测
 
 ```bash
 # yolov3
@@ -91,7 +102,7 @@ python detect_video.py --video path_to_file.mp4 --weights ./checkpoints/yolov3-t
 python detect_video.py --video path_to_file.mp4 --output ./output.avi
 ```
 
-### Training
+### 如何训练
 
 I have created a complete tutorial on how to train from scratch using the VOC2012 Dataset.
 See the documentation here https://github.com/zzh8829/yolov3-tf2/blob/master/docs/training_voc.md
@@ -111,7 +122,7 @@ python train.py --batch_size 8 --dataset ~/Data/voc2012.tfrecord --val_dataset ~
 python train.py --batch_size 8 --dataset ~/Data/voc2012.tfrecord --val_dataset ~/Data/voc2012_val.tfrecord --epochs 10 --mode eager_fit --transfer fine_tune --weights ./checkpoints/yolov3-tiny.tf --tiny
 ```
 
-### Tensorflow Serving
+### Tensorflow 服务
 You can export the model to tf serving
 ```
 python export_tfserving.py --output serving/yolov3/1/
