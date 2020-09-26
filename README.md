@@ -23,7 +23,7 @@
 - [x] 遵循最佳做法
 - [x] MIT许可证
 
-![demo](https://raw.githubusercontent.com/zzh8829/yolov3-tf2/master/data/meme_out.jpg)
+
 ![demo](https://raw.githubusercontent.com/zzh8829/yolov3-tf2/master/data/street_out.jpg)
 
 ## 实践应用
