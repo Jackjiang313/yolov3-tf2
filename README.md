@@ -23,8 +23,10 @@
 - [x] 遵循最佳做法
 - [x] MIT许可证
 
+### 下面看一下YOLO3 的检测效果：
 
 <img src="https://github.com/guo-pu/yolov3-tf2/blob/master/data/cat-output.jpg" width="720" height="450"/><br/>
+
 
 ## 实践应用
 
