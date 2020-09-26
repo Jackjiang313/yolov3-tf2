@@ -24,7 +24,7 @@
 - [x] MIT许可证
 
 
-![demo](https://raw.githubusercontent.com/zzh8829/yolov3-tf2/master/data/street_out.jpg)
+![demo](https://github.com/guo-pu/yolov3-tf2/blob/master/data/cat-output.jpg) 
 
 ## 实践应用
 
