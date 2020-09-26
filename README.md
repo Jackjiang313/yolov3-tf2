@@ -49,18 +49,18 @@
 
 ```bash
 # Tensorflow CPU
-conda env create -f conda-cpu.yml
+conda env create -f Setup_ environment/conda-cpu.yml
 conda activate yolov3-tf2-cpu
 
 # Tensorflow GPU
-conda env create -f conda-gpu.yml
+conda env create -f Setup_ environment/conda-gpu.yml
 conda activate yolov3-tf2-gpu
 ```
 
 ##### Pip
 
 ```bash
-pip install -r requirements.txt
+pip install -r Setup_ environment/requirements.txt
 ```
 
 ##### Nvidia Driver (For GPU)
