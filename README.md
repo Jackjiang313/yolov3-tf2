@@ -3,7 +3,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
 
 此仓库源于zzh8829/yolov3-tf2 进行修改的，yolov3-tf2 ：https://github.com/zzh8829/yolov3-tf2
-基于Python 3.8、TensorFlow2.3版本、opencv-python4.4 的开发环境。
+基于Python3、TensorFlow2.3版本、opencv-python4.4 的开发环境。
 
 ## 主要特点
 
@@ -41,7 +41,9 @@
 详细安装细节，请我博客参考：https://guo-pu.blog.csdn.net/article/details/108807165
 
 
-#### （2）Ubuntu18.04系统
+#### （2）Ubuntu18系统
+主要使用TensorFlow2.3、opencv-python4.4.0、Pillow、matplotlib 等依赖库。
+系统：Windows       编程语言：Python 3.7或以上           深度学习框架：TensorFlow 2.3   
 
 ##### Conda (推荐)
 
