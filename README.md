@@ -1,34 +1,36 @@
-# YoloV3 Implemented in TensorFlow 2.0
+# 在TensorFlow 2.3中实现的YoloV3
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zzh8829/yolov3-tf2/blob/master/colab_gpu.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
 
-This repo provides a clean implementation of YoloV3 in TensorFlow 2.0 using all the best practices.
+此仓库源于zzh8829/yolov3-tf2 进行修改的，yolov3-tf2 ：https://github.com/zzh8829/yolov3-tf2
+基于Python 3.8、TensorFlow2.3版本、opencv-python4.4 的开发环境。
 
-## Key Features
+## 主要特点
 
-- [x] TensorFlow 2.0
-- [x] `yolov3` with pre-trained Weights
-- [x] `yolov3-tiny` with pre-trained Weights
-- [x] Inference example
-- [x] Transfer learning example
-- [x] Eager mode training with `tf.GradientTape`
-- [x] Graph mode training with `model.fit`
-- [x] Functional model with `tf.keras.layers`
-- [x] Input pipeline using `tf.data`
-- [x] Tensorflow Serving
-- [x] Vectorized transformations
-- [x] GPU accelerated
-- [x] Fully integrated with `absl-py` from [abseil.io](https://abseil.io)
-- [x] Clean implementation
-- [x] Following the best practices
-- [x] MIT License
+- [x] TensorFlow 2.3
+- [x] 带有`yolov3` 预先训练好的权重
+- [x] 带有`yolov3-tiny` 预先训练好的权重
+- [x] 提供接口案例
+- [x] 转移学习示例
+- [x] 使用`tf.GradientTape`进行Eager模式训练
+- [x] 使用`model.fit`进行Graph模式训练
+- [x] 具有`tf.keras.layers`的功能模型
+- [x] 使用`tf.data`的输入管道
+- [x] Tensorflow服务
+- [x] 向量化转换
+- [x] GPU加速
+- [x] 简洁地实现
+- [x] 遵循最佳做法
+- [x] MIT许可证
 
 ![demo](https://raw.githubusercontent.com/zzh8829/yolov3-tf2/master/data/meme_out.jpg)
 ![demo](https://raw.githubusercontent.com/zzh8829/yolov3-tf2/master/data/street_out.jpg)
 
-## Usage
+## 实践应用
 
-### Installation
+### 搭建开发环境
+
+### （1）18.04
 
 #### Conda (Recommended)
 
