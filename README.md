@@ -2,8 +2,8 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
 
-此仓库源于zzh8829/yolov3-tf2 进行修改的，yolov3-tf2 ：https://github.com/zzh8829/yolov3-tf2
-基于Python3、TensorFlow2.3版本、opencv-python4.4 的开发环境。
+此仓库源于zzh8829/yolov3-tf2 进行修改的，zzh8829/yolov3-tf2代码仓库地址：https://github.com/zzh8829/yolov3-tf2
+guo-pu/yolov3-tf2是基于Python3、TensorFlow2.3版本、opencv-python4.4 的进行开发的。
 
 ## 主要特点
 
