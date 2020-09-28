@@ -129,6 +129,7 @@ def draw_labels(x, y, class_names):
 
 
 
+
 def freeze_all(model, frozen=True):
     model.trainable = not frozen
     if isinstance(model, tf.keras.Model):
