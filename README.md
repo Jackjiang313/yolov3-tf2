@@ -100,7 +100,7 @@ python convert.py --weights ./data/yolov3-tiny.weights --output ./checkpoints/yo
 
 ```bash
 # yolov3 检测图片的对象
-python detect.py --image ./data/meme.jpg
+python detect.py --image ./data/cat.jpg
 
 # yolov3-tiny
 python detect.py --weights ./checkpoints/yolov3-tiny.tf --tiny --image ./data/street.jpg
