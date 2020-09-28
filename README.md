@@ -24,7 +24,13 @@
 - [x] MIT许可证
 
 ### 下面看一下YOLO3 的检测效果：
+#### 一只小狗和一只小猫同时被检测出来：
+小猫被检测出是cat，1.00；有100%的把握认为是cat 猫；
+小狗被检测出是dog，0.97；有97%的把握认为是cat 猫；
+<img src="https://github.com/guo-pu/yolov3-tf2/blob/master/data/cat-dog2-output.jpg" width="600" height="600"/><br/>
 
+#### 有四只小猫被检测出来：
+使用浅蓝色的框框，把小猫的所在位置框出来，并在框框上方注释标签（类别 置信度）。比如第一只小猫检测出的标签是cat ，置信度是0.95，即有95%的把握认为是cat 猫。
 <img src="https://github.com/guo-pu/yolov3-tf2/blob/master/data/cat-output.jpg" width="720" height="450"/><br/>
 
 
