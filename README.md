@@ -1,4 +1,4 @@
-# 在TensorFlow 2.3中实现的YoloV3
+# 在TensorFlow 2.3中实现的YOLOv3
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
 
